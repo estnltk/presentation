@@ -1,0 +1,362 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass[landscape,footrule]{foils}
+\usepackage[lecture-serie]{foiltex-extra}
+\usepackage{crysymb}
+\usepackage[draft]{crygame}
+\usepackage{graphics}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[pdftex]{graphicx} 
+\usepackage{mathtools}
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage{soul}
+
+
+
+\def\xcolorversion{2.00}
+\def\xkeyvalversion{1.8}
+
+
+
+\usepackage[version=0.96]{pgf}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,snakes,automata,backgrounds,petri}
+
+\tikzset{
+    V1/.style = {
+        rectangle,
+        rounded corners,
+        minimum width = 7cm,
+        minimum height = 1.5cm, 
+        fill  = Apricot,
+        draw = black,
+        thick, 
+    },
+    V2/.style = {
+        rectangle,
+        rounded corners,
+        minimum width = 7cm,
+        minimum height = 1.5cm, 
+        fill  = LimeGreen,
+        draw = black,
+        thick, 
+    }
+}
+
+
+\newcommand{\lecture}{EstNLTK libraries for NLP}
+\newcommand{\lserie}{}
+\newcommand{\ldate}{20. oktoober 2015}
+\newcommand{\lauthor}{\textbf{Sven Laur$^{\spadesuit,\diamondsuit}$}\vspace*{1ex}\\ \blue{\url{https://github.com/estnltk}} }
+\newcommand{\linst}{\ \vspace*{1cm}\\ $^\spadesuit$STACC\\ 
+$^\diamondsuit$University of Tartu\vspace*{1ex} }
+\graphicspath{{./illustrations/}}
+\MyLogo{Data Science seminar, EstNLTK libraries for NLP, 26 September 2018, Tartu}
+
+
+\newcommand{\colorcommand}[2]
+{\hspace*{-0.15em}\colorbox{#1}{\hspace*{-0.25em}\ensuremath{#2}\rule{0pt}{1.6ex}\hspace*{-0.25em}}}
+\newcommand{\lowcolorcommand}[2]
+{\hspace*{-0.15em}\colorbox{#1}{\hspace*{-0.25em}\ensuremath{#2}\rule{0pt}{1.2ex}\hspace*{-0.25em}}}
+\newcommand{\shared}[1]{[\![#1]\!]}
+
+\newcommand{\leqm}{\ \leq_m}
+
+\newcommand\redsout{\bgroup\markoverwith{\textcolor{red}{\rule[0.3ex]{2pt}{4.0pt}}}\ULon}
+
+
+\newcommand{\bigvskip}{\vskip 2em}
+\newcommand{\lastline}{\vspace*{-2ex}}
+\newcommand{\spreadappart}{\vspace*{\fill}}
+
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\conf}{conf}
+\DeclareMathOperator{\precision}{precision}
+\DeclareMathOperator{\recall}{recall}
+
+
+\begin{document}
+\titlefoil
+
+\foilhead[-1cm]{Yet another library for NLP?}
+\LogoOn
+
+There are myriad of libraries for processing text
+\begin{triangles}
+\item GATE, Stanford CoreNLP (Java, general purpose) 
+\item NLTK, SPACY (Python, general purpose)
+\item Scikit-learn, Gensim (Python, specific tasks)\vspace*{1cm}
+\end{triangles}
+
+There are many tools for analysing Estonian language
+\begin{triangles}
+\item Vabamorf, EstHST, EstNeuroMorph (morphology)
+\item EstCG, EstMalt (syntax) 
+\item Estonian WordNet
+\item Named Entity Recognition
+\item $\ldots$
+\end{triangles} 
+
+\foilhead[-1cm]{Goals of EstNLTK project}
+
+EstNLTK is a Python library distributed under GPLv2 license: 
+\begin{triangles}
+\item Easy to install, learn and use  
+\item Unified framework for text annotations 
+\item Programmatic access to existing text analysis tools
+\item Predefined but reconfigurable workflows for common tasks
+\item Unified framework for visualisation and storing annotations\vspace*{1cm}
+\end{triangles}
+
+\foilhead[-1cm]{How can I use EstNLTK?}
+
+Installation
+\begin{triangles}
+\item Anaconda binary packages (easy)
+\item Standard pip installer (I like obscure C++ compiling errors)
+\item The latest GIT commit (Random hacks to avoid C++ compiler)\vspace*{1cm}
+\end{triangles}
+
+
+Licensing
+\begin{triangles}
+\item I believe in free software (GPLv2)
+\item I am building a service or software for internal usage (GPLv2)
+\item I need more liberal licence to sell a commercial product:\vspace*{0.5ex}
+\begin{diamonds}
+\item Contact University of Tartu for different license
+\item Write a wrapper to make EstNLTK as a separate process
+\end{diamonds}
+\end{triangles}
+
+\foilhead[-1cm]{Basic concepts}
+
+\begin{triangles}
+\item Annotations for text spans (\textsc{Taggers})\\
+\centerline{\includegraphics[scale=0.9]{annotations}}
+\item Annotations for relations between spans (\textsc{Syntax} \& \textsc{Complex facts})\\
+\centerline{\includegraphics[scale=0.9]{syntax}}
+\end{triangles}
+
+\foilhead[-1cm]{Basic concepts}
+
+\begin{triangles}
+\item Annotations for relations between spans (\textsc{Syntax} \& \textsc{Complex facts})\\
+\centerline{\includegraphics[scale=0.9]{syntax}}
+\item Span trees on top of text spans (\textsc{Phrases} \& \textsc{Fact extraction})\\
+\centerline{\includegraphics[scale=0.9]{trees}}
+\end{triangles}
+
+
+\foilhead[-1cm]{What can you tag with EstNLTK?}
+\begin{triangles}
+\item Basic building blocks of text:\vspace*{0.5ex} 
+\begin{diamonds}
+\item words, sentences, paragraphs.\vspace*{2ex} 
+\end{diamonds}
+\item Morphology\vspace*{0.5ex} 
+\begin{diamonds}
+\item lemma, part of speech, case, tense, number,$\ldots$
+\item in \textcolor{blue!100}{\textbf{Estmorf}}, \textcolor{blue!70}{Giellatekno}, \textcolor{blue!40}{Visl CG} formats,  \vspace*{2ex} 
+\end{diamonds}
+\item Important phrases (\textcolor{orange!80!black!60}{\textbf{EstNLTK 1.4}})
+\vspace*{0.5ex} 
+\begin{diamonds}
+\item named entities
+\item noun phrases, adjective phrases, verb chains 
+\item clauses, time phrases\vspace*{2ex}  
+\end{diamonds}
+
+\item \textcolor{gray!70}{Syntax (EstNLTK 1.4)}
+\vspace*{0.5ex} 
+\begin{diamonds}
+\item \textcolor{gray!70}{EstCG and EstMalt models}
+\end{diamonds}
+\end{triangles}
+
+\foilhead[-1cm]{What does EstNLTK 1.6 offer?}
+
+\begin{triangles}
+\item \textcolor{green!50!black!100}{Span hierarchies}
+\item \textcolor{green!50!black!100}{Ambiguous annotations}
+
+\item \textcolor{orange!90}{New analysis algorithms}
+\item \textcolor{green!50!black!100}{Predefined analysis workflows}
+\item \textcolor{green!50!black!100}{Two-phase fact extraction algorithms}
+\item \textcolor{green!50!black!100}{Postgre collections for storage and search}
+\item \textcolor{orange!90}{Better visualisation and integration with jupyter}
+\item \textcolor{orange!90}{Standard taggers for important phrases}
+\item \textcolor{red!90!black!100}{Native support for syntax analysis}
+
+\end{triangles}
+
+\foilhead[-1cm]{Span hierarchies in EstNLTK 1.6}
+
+\centerline{\includegraphics[scale=0.9]{span-hierachy}}
+
+It is natural to define new spans in terms of other spans:
+\begin{diamonds}
+\item new phrases 
+\item independent annotations
+\end{diamonds}
+
+\foilhead[-1cm]{Ambiguous annotations}
+
+\centerline{\includegraphics[scale=0.9]{ambiguous}}
+
+Sometimes it is impossible to assign unique interpretation to a span
+\begin{diamonds}
+\item A span can have several annotations
+\item Annotations of different spans are independent
+\end{diamonds}
+
+\foilhead[-1cm]{Robust NLP pipleline}
+
+\textbf{Why?}
+\begin{triangles}
+\item Good analysis requires many tedious cleaning steps 
+\item You can incorporate data specific tweaks into the pipeline\vspace*{1cm}
+\end{triangles}
+
+
+\textbf{What does the robust NLP pipeline do?}
+\begin{triangles}
+\item Identifies compound tokens:\vspace*{0.5ex}
+\begin{diamonds}
+\item numbers, dates, units, urls, emails, xml-tags 
+\item abbreviations, emoticons, symbol tokens, compound names,$\ldots$\vspace{1ex}
+\end{diamonds}
+\item Identifies normal forms for words:\vspace*{0.5ex}
+\begin{diamonds}
+\item date normalisation
+\item \textcolor{red!90!black!100}{corrects spelling mistakes}\vspace{1ex}
+\end{diamonds}
+\item $\ldots$
+\end{triangles}
+
+\foilhead[-1.5cm]{What does the robust NLP pipeline do?}
+\enlargethispage{1cm}
+\begin{triangles}
+\item Identifies compound tokens:\vspace*{0.5ex}
+\begin{diamonds}
+\item numbers, dates, units, urls, emails, xml-tags 
+\item abbreviations, emoticons, symbol tokens, compound names,$\ldots$\vspace{1ex}
+\end{diamonds}
+\item Identifies normal forms for words:\vspace*{0.5ex}
+\begin{diamonds}
+\item date normalisation
+\item \textcolor{red!90!black!100}{corrects spelling mistakes}\vspace{1ex}
+\end{diamonds}
+\item Identifies sentence and paragraph borders\vspace*{0.5ex}
+\begin{diamonds}
+\item standard sentence detection
+\item post-corrections (numbers, abbreviations, emoticons)\vspace{1ex}
+\end{diamonds}
+\item Performs morphological analysis \vspace*{0.5ex}
+\begin{diamonds}
+\item vabamorf
+\item post-corrections for specific words (number-text combos)\vspace{1ex}
+\end{diamonds}
+\item \textcolor{orange}{Performs syntax analysis}
+\end{triangles}
+
+
+\foilhead[-1cm]{Two-phase fact extraction}
+
+\centerline{\includegraphics[scale=0.9]{psa-example}}
+
+Fact extraction can be done with finite attribute grammars
+\begin{triangles}
+\item Tokenisation is often ambiguous
+\item Grammar rules filter out spurious token variants
+\item Meaning can be given iteratively from bottom up\vspace*{1cm}
+\end{triangles}
+
+\foilhead[-1cm]{Tweaks to the previous ideas}
+
+\begin{triangles}
+\item It is convenient to allow infinite sequences 
+
+\centerline{\includegraphics[scale=0.9]{sequence-example}}
+\item It is convenient to add rule priorities
+
+\centerline{\includegraphics[scale=0.9]{priority-example}}
+
+\item It is convenient to cancel productions with conflicting attributes
+
+\centerline{\includegraphics[scale=0.9]{attribute-conflict}}
+
+
+\end{triangles}
+
+
+\foilhead[-1cm]{Postgre storage}
+
+\textbf{Why?}
+\begin{triangles}
+\item Provides a simple searchable JSON serialisation to EstNLTK objects
+\item Allows to speeds up fact extraction after tokenisation is done\vspace*{1.0cm} 
+\end{triangles}
+
+\textbf{What does Postgre collection do?}
+\begin{triangles}
+\item Allows to define new layers 
+\item Allows to index layers with fingerprints
+\item Allows to compare different layers during grammar development\vspace*{1.0cm} 
+\end{triangles}
+
+
+\textbf{What does Postgre collection contain?}
+\begin{triangles}
+\item Text objects, outer layers, layer fragments 
+\item Meta attributes for text objects and layers
+\end{triangles}
+
+
+\foilhead[-1cm]{Contributors to EstNLTK project}
+
+\textbf{Developers}
+\begin{center}
+\begin{tabular}{cc}
+\begin{minipage}[t]{7cm}
+\begin{bullets}
+\item Siim Orasmaa
+\item Timo Petmanson
+\item Uku Raudvere
+\end{bullets}
+\end{minipage}
+&
+\begin{minipage}[t]{10cm}
+\begin{bullets}
+\item Dage Särg
+\item Paul Tammo
+\item Aleksandr Tkatšenko
+\end{bullets}  
+\end{minipage}
+\end{tabular}
+\end{center}
+\vspace*{2cm}
+\textbf{Consulting}
+\begin{center}
+\begin{minipage}[t]{10cm}
+\begin{bullets}
+\item Heiki-Jaan Kaalep
+\item Kadri Muischnek
+\item Kairit Sirts
+\item Tarmo Vaino
+\end{bullets}  
+\end{minipage}
+\hspace*{7.5cm}
+\end{center}
+
+
+\end{document}
+
+
+
+
+
+
+\end{document}
+
+

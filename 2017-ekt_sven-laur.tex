@@ -1,0 +1,530 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass[landscape,footrule]{foils}
+\usepackage[lecture-serie]{foiltex-extra}
+\usepackage{crysymb}
+\usepackage[draft]{crygame}
+\usepackage{graphics}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[pdftex]{graphicx} 
+\usepackage{mathtools}
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage{soul}
+
+
+\def\xcolorversion{2.00}
+\def\xkeyvalversion{1.8}
+
+
+
+\usepackage[version=0.96]{pgf}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,snakes,automata,backgrounds,petri}
+
+\tikzset{
+    V1/.style = {
+        rectangle,
+        rounded corners,
+        minimum width = 7cm,
+        minimum height = 1.5cm, 
+        fill  = Apricot,
+        draw = black,
+        thick, 
+    },
+    V2/.style = {
+        rectangle,
+        rounded corners,
+        minimum width = 7cm,
+        minimum height = 1.5cm, 
+        fill  = LimeGreen,
+        draw = black,
+        thick, 
+    }
+}
+
+
+\newcommand{\lecture}{\ \vspace*{-5cm}\\EstNLTK muutuste tuules:\\ 1.4 $\rightsquigarrow$ 1.6}
+\newcommand{\lserie}{}
+\newcommand{\ldate}{20. oktoober 2015}
+\newcommand{\lauthor}{\textbf{Sven Laur$^{\diamondsuit,\spadesuit}$}\vspace*{0ex}\\ \blue{\url{https://github.com/estnltk}} }
+\newcommand{\linst}{\ \vspace*{1cm}\\ $^\diamondsuit$Tartu Ülikool\vspace*{1ex}\\ $^\spadesuit$Tarkvara Tehnoloogia Arenduskeskus OÜ}
+\graphicspath{{./illustrations/}}
+\MyLogo{Konverents "EESTI KEELETEHNOLOOGIA 2017", 18.–20. aprill 2017, Tallinn}
+
+
+\newcommand{\colorcommand}[2]
+{\hspace*{-0.15em}\colorbox{#1}{\hspace*{-0.25em}\ensuremath{#2}\rule{0pt}{1.6ex}\hspace*{-0.25em}}}
+\newcommand{\lowcolorcommand}[2]
+{\hspace*{-0.15em}\colorbox{#1}{\hspace*{-0.25em}\ensuremath{#2}\rule{0pt}{1.2ex}\hspace*{-0.25em}}}
+\newcommand{\shared}[1]{[\![#1]\!]}
+
+\newcommand{\leqm}{\ \leq_m}
+
+\newcommand\redsout{\bgroup\markoverwith{\textcolor{red}{\rule[0.3ex]{2pt}{4.0pt}}}\ULon}
+
+
+\newcommand{\bigvskip}{\vskip 2em}
+\newcommand{\lastline}{\vspace*{-2ex}}
+\newcommand{\spreadappart}{\vspace*{\fill}}
+
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\conf}{conf}
+\DeclareMathOperator{\precision}{precision}
+\DeclareMathOperator{\recall}{recall}
+
+
+\begin{document}
+\titlefoil
+
+
+
+\foilhead[-1cm]{Mis on EstNLTK projekt?}
+\LogoOn
+\begin{triangles}
+\item Vabavaraline Pythoni teek eestikeelsete tekstide töötlemiseks\vspace*{0.5ex} 
+\begin{diamonds}
+\item sõnestamine, lausestamine 
+\item morfoloogiline ja süntaktiline analüüs
+\item märgenduskihid fraaside eraldamiseks\vspace*{2ex}
+\end{diamonds}
+\item Eraldiseisvad rakendused standardsete probleemide lahendamiseks\vspace*{0.5ex} 
+\begin{diamonds}
+\item tekstide klassifitseerimine (\blue{textclassifier})
+\item oluliste märksõnade tuvastamine (\blue{volcanoplot}) 
+\item näitemärgenduste koostamine (\blue{ner-tagger}, \blue{gap-tagger}) \vspace*{2ex}
+\end{diamonds} 
+\item Keeleresursid ja testandmestikud
+\vspace*{0.5ex} 
+\begin{diamonds}
+\item Lünktestid kontekstide ennustamiseks (\blue{word embeddings})
+\item Nimeolemite ennustamise testandmestikud (\blue{named entity recognition}) 
+\end{diamonds} 
+\end{triangles}
+
+\foilhead[-1cm]{EstNLTK 1.4 teek}
+
+\begin{triangles}
+\item Andmeformaat märgenduskihtide salvestamiseks\vspace*{0.5ex} 
+\begin{diamonds}
+\item tähe{\setlength{\fboxsep}{2pt}
+\colorbox{Apricot}{põhi}\textcolor{Apricot}{\rule[3pt]{2em}{3pt}}\hspace*{-2em}sed \colorbox{Apricot}{märge}ndus\colorbox{LimeGreen}{elemendid\rule[-3pt]{0pt}{12pt}}} 
+\item märgenduselemendile vastavad attribuudid
+\item märgenduselementidest koosnevad märgenduskihid\vspace*{2ex}
+\end{diamonds}
+\item Liidesed olemasolevatele analüsaatoritele\vspace*{0.5ex} 
+\begin{diamonds}
+\item lausestaja
+\item morfoanalüsaator (\blue{vabamorf})
+\item pindsüntaktiline analüüs (\blue{visl}, \blue{maltparser})
+\vspace*{2ex}
+\end{diamonds}
+\item Uued komponendid\vspace*{0.5ex} 
+\begin{diamonds}
+\item fraaside märgendajad (\blue{ajaväljendid}, \blue{verbiahelad}, \blue{$\ldots$})
+\item keerulised fakti- ja fraasieraldusalgoritmid 
+\vspace*{2ex}
+\end{diamonds}
+\end{triangles}
+
+\foilhead[-1cm]{EstNLTK 1.4 märgenduskihid}
+
+\begin{triangles}
+\item \textbf{paragraphs}
+\item \textbf{sentences}
+\item \textbf{words} \vspace*{0.5ex} 
+\begin{triangles}
+\item \blue{analysis} \vspace*{0.5ex}
+\begin{diamonds}
+\item $\ldots$, form, lemma, $\ldots$\vspace*{1ex}
+\end{diamonds} 
+\item \blue{clause\_index} 
+\item \blue{ner\_label} \vspace*{1ex}
+\end{triangles}
+\item \textbf{gt\_words} \vspace*{0.5ex} 
+\begin{triangles}
+\item \blue{analysis} \vspace*{0.5ex}
+\begin{diamonds}
+\item $\ldots$, form, lemma, $\ldots$\vspace*{2ex}
+\end{diamonds}  
+\end{triangles}
+\item \textbf{verb\_chains}
+\item \textbf{$\cdots$}
+\end{triangles}
+
+\foilhead[-1cm]{Puudused ja probleemid}
+\begin{triangles}
+\item Sõnadekiht (\textbf{words}) ja lausetekiht (\textbf{sentences}) võivad olla nihkes \\
+
+\hspace*{3cm}
+\begin{tabular}{ll}
+\textbf{words:}&
+{\setlength{\fboxsep}{3pt}
+\colorbox{Apricot}{Ta} \colorbox{Apricot}{läks} \colorbox{Apricot}{kell} \colorbox{Apricot}{14\hspace*{5pt}.\hspace*{5pt}30} 
+\colorbox{Apricot}{ära}}\\
+\textbf{sentences:} &
+{\setlength{\fboxsep}{3pt}
+\colorbox{LimeGreen}{Ta\hspace*{6pt} läks\hspace*{6pt} kell\hspace*{6pt} 14.} \colorbox{LimeGreen}{30 \hspace*{3pt}ära} }\\
+\end{tabular}\vspace*{2ex}
+
+
+\item Osad kihid (\blue{analysis}, \blue{clauses}, $\ldots$) on esitatud atribuutidena \\ 
+
+\hspace*{3.5cm}
+\begin{minipage}{10cm} 
+\begin{triangles}
+\item \textbf{words} \vspace*{0.5ex} 
+\begin{triangles}
+\item \blue{analysis} \vspace*{0.5ex}
+\begin{diamonds}
+\item $\ldots$
+\item form
+\item  lemma
+\item $\ldots$\vspace*{1ex}
+\end{diamonds} 
+\end{triangles}
+\end{triangles}
+\end{minipage}
+\vspace*{1.5cm} 
+
+kuid baasaoperatsioonid on defineeritud kihtidel  
+
+\end{triangles}
+
+\foilhead[-1cm]{Puudused ja probleemid}
+\begin{triangles}
+\item  Süsteemitus mitmesuste esitamisel. Kombinatoorne plahvatus \\
+   
+\hspace*{0.5cm}
+\begin{minipage}{10cm} 
+\begin{triangles}
+\item \textbf{words} \vspace*{0.5ex} 
+\begin{triangles}
+\item \blue{analysis} \vspace*{1.5ex}\\
+\begin{tabular}{cccc} 
+\colorbox{Apricot}{
+ \begin{minipage}{3.75cm}
+ \begin{diamonds}
+ \item $\ldots$
+ \item form
+ \item lemma
+ \item $\ldots$\vspace*{1ex}
+ \end{diamonds}
+ \end{minipage}}
+ &
+ \colorbox{LimeGreen}{
+ \begin{minipage}{3.75cm}
+ \begin{diamonds}
+ \item $\ldots$
+ \item form
+ \item lemma
+ \item $\ldots$\vspace*{1ex}
+ \end{diamonds} 
+ \end{minipage}}
+ & 
+ $\cdots$
+ &
+ \colorbox{Tan}{
+ \begin{minipage}{3.75cm}
+ \begin{diamonds}
+ \item $\ldots$
+ \item form
+ \item lemma
+ \item $\ldots$\vspace*{1ex}
+ \end{diamonds} 
+ \end{minipage}}
+ \\ \\
+\colorbox{Apricot}{
+ \begin{minipage}{3.75cm}
+ \begin{diamonds}
+ \item ner\_label
+ \item $\ldots$\vspace*{1ex}
+ \end{diamonds}
+ \end{minipage}}
+ &
+ \colorbox{LimeGreen}{
+ \begin{minipage}{3.75cm}
+ \begin{diamonds}
+ \item ner\_label
+ \item $\ldots$\vspace*{1ex}
+ \end{diamonds} 
+ \end{minipage}}
+ & 
+ $\cdots$
+ &
+ \colorbox{Tan}{
+ \begin{minipage}{3.75cm}
+ \begin{diamonds}
+ \item ner\_label
+ \item $\ldots$\vspace*{1ex}
+ \end{diamonds} 
+ \end{minipage}}
+
+\end{tabular}
+
+\end{triangles}
+\end{triangles}
+\end{minipage}
+
+\end{triangles}
+
+
+
+\foilhead[-1cm]{EstNLTK 1.6 märgenduskihid}
+\begin{triangles}
+\item \textbf{words} \vspace*{0.5ex}
+\begin{triangles}
+\item \textbf{paragraphs}
+\item \textbf{sentences}
+\item \textbf{normalised\_words}
+\item \textbf{morf\_analysis} \vspace*{0.5ex}
+\begin{diamonds}
+\item \blue{$\ldots$, form, lemma, $\ldots$}\vspace*{1ex}
+\end{diamonds} 
+\item \textbf{pronouns}\vspace*{0.5ex}
+\begin{diamonds}
+\item \blue{type}\vspace*{1ex}
+\end{diamonds} 
+\item \textbf{finite\_forms}\vspace*{0.5ex}
+\begin{diamonds}
+\item \blue{$\varnothing$}\vspace*{1ex}
+\end{diamonds} 
+\item \textbf{verb\_chains}
+
+\item \textbf{$\cdots$} 
+\end{triangles}
+\item \textbf{$\cdots$}
+\end{triangles}
+
+\foilhead[-1cm]{Mitmesuste käsitlemine}
+\enlargethispage{3cm}
+\begin{triangles}
+\item Kihis võib võib ühele märgenduselemendile vastata mitu tõlgendust\vspace*{2ex}
+
+\begin{center}
+{\setlength{\fboxsep}{3pt}
+\colorbox{Apricot}{\rule[-3pt]{0pt}{16pt}tee}} $\to$
+\begin{tabular}{|c|c|c|c|}
+\hline
+lemma & POS & form & $\ldots$\\
+\hline
+tee    & S & sg n & $\ldots$\\
+tee    & S & sg g & $\ldots$\\
+tegema & V &      & $\ldots$\\
+\hline
+\end{tabular}\vspace*{4ex}
+\end{center} 
+Iga elemendi tõlgendusele vastavad konkreetsed atribuutide väärtused\vspace*{2ex}
+\item Erinevate elementide tõlgendused kihis on kombineeruvad sõltumatult \vspace*{2ex}
+
+\begin{center}
+$\left(
+\begin{minipage}{6cm}
+{\setlength{\fboxsep}{3pt}
+\colorbox{Apricot}{tee\rule[-3pt]{0pt}{16pt}}} $\to$
+\begin{tabular}{|c|}
+\hline
+lemma \\
+\hline
+tee  \\
+tegema \\
+\hline
+\end{tabular}
+\end{minipage}\right)
+\quad\times\quad
+\left(
+\begin{minipage}{6cm}
+{\setlength{\fboxsep}{3pt}
+\colorbox{Apricot}{aja}} $\to$
+\begin{tabular}{|c|}
+\hline
+lemma \\
+\hline
+aeg  \\
+ajama \\
+\hline
+\end{tabular}
+\end{minipage}
+\right)
+$
+
+\end{center}
+
+\foilhead[-1cm]{Mitmesuste käsitlemine}
+\enlargethispage{1cm}
+
+\item Erinevate kihtide tõlgendused on kombineeruvad sõltumatult  \vspace*{2ex}
+\begin{align*}
+\left(
+\begin{minipage}{9cm}
+\textbf{morf:}\ 
+{\setlength{\fboxsep}{3pt}
+\colorbox{Apricot}{tee\rule[-3pt]{0pt}{16pt}}} 
+$\to$
+\begin{tabular}{|c|c|c|c|}
+\hline
+ \ \ lemma\ \;  \\
+\hline
+tee    \\
+tee    \\
+tegema \\
+\hline
+\end{tabular}
+\end{minipage}\right)\\
+\times \hspace*{4.5cm}\\
+\left(
+\begin{minipage}{9cm}
+\textbf{ner:}\;\; 
+{\setlength{\fboxsep}{3pt}
+\colorbox{Apricot}{tee\rule[-3pt]{0pt}{16pt}}} 
+ $\to$
+\begin{tabular}{|c|}
+\hline
+\hspace{0.7cm}
+type\hspace{0.7cm} \\
+\hline
+LOC \\
+ORG \\
+\hline
+\end{tabular}
+\end{minipage}
+\right)
+\end{align*} 
+\end{triangles}
+
+
+
+\foilhead[-1cm]{Robustne tekstianalüüs töövoog}
+\begin{center}
+\hspace*{-18cm}
+\begin{tikzpicture}[transform canvas={scale=0.65}]
+  \draw node[V2] (S1) at ( 9, 0) {Sõnestamine};
+  \draw node[V1] (S2) at (18,-2) {Järelsõnestamine};
+  \draw node[V2] (L1) at ( 9,-4) {Lausestamine};
+  \draw node[V1] (L2) at (18,-6) {Järellausestamine};
+  \draw node[V1] (M0) at ( 0,-8) {Normaliseerimine};
+  \draw node[V2] (M1) at ( 9,-10) {Morf. analüüs};
+  \draw node[V1] (M2) at (18,-12) {Morf. parandused};
+  \draw node[V2] (PS1) at ( 9,-14) {Morf. teisendused};
+  \draw node[V1] (PS2) at (18,-16) {Vigade diagnostika};
+  \draw node[V2] (VS1) at (27,-16) {VISL};
+  
+  \draw[->, line width=3pt] (S1) -| (S2);
+  \draw[->, line width=3pt] (S2) -| (L1);
+  \draw[->, line width=3pt] (L1) -| (L2);
+  \draw[->, line width=3pt] (L2) -| (M0);
+  \draw[->, line width=3pt] (M0) -| (M1);
+  \draw[->, line width=3pt] (M1) -| (M2);
+  \draw[->, line width=3pt] (M2) -| (PS1);
+  \draw[->, line width=3pt] (PS1) -| (PS2);
+  \draw[->, line width=3pt] (PS1) -| (VS1);
+
+\end{tikzpicture}
+\end{center}
+
+\foilhead[-1cm]{Milleks on sellist analüüsi vaja?}
+
+\textbf{Probleem:} Koondkorpuses on üle 10 000 erineva asesõna
+\begin{triangles}
+\item tege-ma $\to$ lemma: tege-mina
+\item 1203-me $\to$ lemma: 1203-meie
+\item kes-teab-mis $\to$ lemma: kes-teab-mis
+\end{triangles}
+\vspace*{3cm}
+Olemasolev töövoog ei sisalda standardseid teksti puhastussamme
+\begin{triangles}
+\item See muudab raskemaks tüüpiliste tekstide analüüsi
+\item Iga üks meist leiutab samu tekstide puhastamise võtteid
+\item Ei jää aega korpuse spetsiifiliste probleemide tuvastamiseks 
+\end{triangles}
+
+
+
+
+\foilhead[-1cm]{Fraaside eraldamine}
+
+\begin{center}
+Pulss neljapäeval 14.13:56 lööki\vspace*{2ex}
+\begin{tabular}{|cccccccc|}
+\hline
+Pulss & neljapäeval & 14 & . &13 &: &56 &lööki\rule[-1ex]{0pt}{1ex}\\
+\hline
+\hline
+      & \colorbox{Apricot}{\hspace{0.5em}\smash{DATE}\rule{0pt}{12pt}\hspace{0.5em}}       
+      & \multicolumn{5}{l}{\colorbox{LimeGreen}{\hspace{5.0em}\smash{TIME}\rule{0pt}{12pt}\hspace{5.0em}}} \rule[-2ex]{0pt}{5ex} &\\
+      &
+      & \multicolumn{3}{c}{\colorbox{LimeGreen}{\hspace{1.7em}\smash{TIME}\rule{0pt}{12pt}\hspace{2.0em}}}
+      &
+      & \colorbox{Tan}{\hspace*{0.25em}\smash{NUM}\rule{0pt}{12pt}\hspace*{0.25em}}
+      & \colorbox{Dandelion}{\hspace*{0.25em}\smash{UNIT}\rule{0pt}{12pt}\hspace*{0.25em}}
+      \rule[-2ex]{0pt}{1ex}\\
+\hline      
+\end{tabular}\vspace*{1cm}
+\end{center}
+\begin{triangles}
+\item Huvitavad fraasid on kirjeldatavad \emph{lõpliku} grammatikaga
+\item Fraaside parsimisel olev sõnestus pole ühene ega ülekatteta
+\item Sõnestuse ühestamiseks on mõistlik kasutada grammatikat
+\item Reeglite prioriteete on kasulik annoteerida tõenäosustega 
+\end{triangles}
+
+
+\foilhead[-1cm]{Kokkuvõte}
+
+\textbf{Hea}
+\begin{triangles}
+\item EstNLTK liides ühtlustub 
+\item EstNLTK kasutamine muutub ettearvatavamaks
+\item EstNLTK liidestub erinevate veebikeskkondadega
+\item EstNLTK katab operatsioonid sõnestusest kuni süntaksianalüüsini
+\end{triangles}
+\vspace*{2cm}
+\textbf{Halb}
+\begin{triangles}
+\item EstNLTK liides liides muutub
+\item EstNLTK nõuab Pythoni versiooni 3.5
+\item Kõik EstNLTK 1.4 olevad komponendid ei jõua EstNLTK 1.6
+\end{triangles}
+
+
+
+\foilhead[-1cm]{Täname}
+
+\textbf{Arendajad}
+\begin{center}
+\begin{tabular}{cc}
+\begin{minipage}[t]{7cm}
+\begin{bullets}
+\item Siim Orasmaa
+\item Timo Petmanson
+\item Uku Raudvere
+\end{bullets}
+\end{minipage}
+&
+\begin{minipage}[t]{10cm}
+\begin{bullets}
+\item Dage Särg
+\item Paul Tammo
+\item Aleksandr Tkatšenko
+\end{bullets}  
+\end{minipage}
+\end{tabular}
+\end{center}
+\vspace*{2cm}
+\textbf{Nõustajad}
+\begin{center}
+\begin{minipage}[t]{10cm}
+\begin{bullets}
+\item Heiki-Jaan Kaalep
+\item Kadri Muischnek
+\item Tarmo Vaino
+\end{bullets}  
+\end{minipage}
+\hspace*{7.5cm}
+\end{center}
+
+
+
+
+\end{document}
+
+
