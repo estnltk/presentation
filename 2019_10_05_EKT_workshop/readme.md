@@ -1,48 +1,62 @@
 # EstNLTK õpipada  
 
-**Autorid:** Dage Särg ja Sven Laut <br> 
+**Autorid:** Dage Särg ja Sven Laur <br> 
 **Toimumisaeg:** 5. november 2019 <br>
 **Asukoht:** EKT konverents. Prototüübist teostuseni. Tallinn
 
 ## Ettevalmistused õpipajas osalemiseks
 
-Õpipajas tulemuslikult osalemiseks on vaja:
+Need, kes soovivad EstNLTK õpitoas näidatut kohe oma arvutis järgi proovida, peaksid selleks eelnevalt installima vajaliku tarkvara. 
 
-* Jupyter keskonda
-* EstNLTK 1.6 viimast binaarversiooni
-* lokaalset Postgre serverit  
+### EstNLTK lingvistilise analüüsi töövahendite kasutamiseks oleks vaja teha järgmist:
 
-**Ma ei oska tarkvara installida:**
+1) Installida Anaconda, mille saab alla laadida siit https://www.anaconda.com/distribution/ (Python 3.7 versioon).
 
-Sellisel juhul tuleb instaleerida virtuaalmasin koos eelinstaleeritud  Ubuntu Linux operatsioonisüsteemiga:
-
-* [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-* [VitualBox-i image](https://drive.google.com/open?id=1R8Cb2aIyMiD6KhvPyenR-yDYyyavxAnq)
-
-
-### Conda instaleerimine
-
-Operatsioonisüsteemide Linux, MacOS ja Windows korral on mõistlik kasutada Anaconda keskonna graafilisi instaleerimisvahendeid. Õpetused selleks leiab aadressilt [https://docs.anaconda.com/anaconda/install/](https://docs.anaconda.com/anaconda/install/)
-
-### EstNLTK instaleerimine käsurealt
+2) Avada terminaliaken ning luua ja aktiveerida conda keskkond, mis kasutab Python 3.6:
 
 <code>
-conda create --name estnltk python=3.6 <br>
-conda install -n estnltk jupyter <br>
+conda create -n estnltk python=3.6 -y
+   
+conda activate estnltk
+</code>   
+
+3) Installida loodud keskkonda EstNLTK 1.6 ning jupyter:
+
+<code>
+conda install -c estnltk -c conda-forge estnltk
+   
+conda install jupyter
+</code>   
+
+4) Liikuda käsureal cd käsu abil kausta, kuhu on alla laaditud kirja manuses olev näidis (fail notebook-example.ipynb) ning käivitada näidis-notebook:
+
+<code>
+jupyter notebook notebook-example
+</code> 
+
+5) Jooksutada Shift+Enter abil läbi notebookis olev koodilahter ning veenduda, et asi töötab
+
+
+### EstNLTK andmebaasitöövahendite kasutamiseks on vaja lisaks veel järgmist:
+
+1) Installida loodud conda keskkonda psycopg2 ja conllu paketid:
+
+<code>
 conda install -n estnltk psycopg2 <br>
-conda install -n estnltk -c estnltk -c conda-forge estnltk <br>
 conda install -n estnltk -c conda-forge conllu <br>
 </code>
 
-### Postgre serveri instaleerimine
+2) Lokaalset Postgre serverit  
 
-Operatsioonisüsteemi MacOS korral on kõige lihtsam viis instaleerida [Postgres.app](https://postgresapp.com) kui teil pole juba varem instaleeritud lokaalset postgre serverit. 
+#### Postgre serveri installimine
 
-Operatsioonisüsteemi Ubuntu Linux korral saab jälgida instaleerimisjuhendit [How to Install PostgreSQL 11 on Ubuntu 18.04 & 16.04 LTS](https://tecadmin.net/install-postgresql-server-on-ubuntu/) 
+Operatsioonisüsteemi MacOS korral on kõige lihtsam viis installida [Postgres.app](https://postgresapp.com), kui teil pole juba varem installitud lokaalset postgre serverit. 
 
-Järgnevat oleks vaja luua ka andmebaas `ekt` ja andmebaasi kasutaja ning soovi korral ka skeema `media_analysis`. Selleks tuleb postgreg serveriga õigetes õigustes ühenduda kasutades programmi `psql`.
+Operatsioonisüsteemi Ubuntu Linux korral saab jälgida installimisjuhendit [How to Install PostgreSQL 11 on Ubuntu 18.04 & 16.04 LTS](https://tecadmin.net/install-postgresql-server-on-ubuntu/) 
 
-MacOS korral saab vastava keskonna käima klikkides andmebaasi ikoonile. Linuxi all on vaja kahte rida
+Järgnevalt oleks vaja luua ka andmebaas `ekt` ja andmebaasi kasutaja ning soovi korral ka skeema `media_analysis`. Selleks tuleb postgre serveriga õigetes õigustes ühenduda kasutades programmi `psql`.
+
+MacOS korral saab vastava keskonna käima, klikkides andmebaasi ikoonile. Linuxis on vaja kahte rida:
 
 <code>
 sudo su - postgres <br>
@@ -62,5 +76,12 @@ CREATE SCHEMA media_analysis;
 
 Esimene rida loob andmebaasi. Teine ja kolmas loovad ja muudavad Postgre serveri kasutaja tunnust. Neljas rida loob andmebaasi skeema.
 
+
+**Kui ei soovi või ei oska tarkvara installida, aga tahaks ikka töövahendeid ise katsetada:**
+
+Sellisel juhul tuleb instaleerida virtuaalmasin koos eelinstallitud  Ubuntu Linux operatsioonisüsteemiga:
+
+* [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+* [VitualBox-i image](https://drive.google.com/open?id=1R8Cb2aIyMiD6KhvPyenR-yDYyyavxAnq)
    
 
