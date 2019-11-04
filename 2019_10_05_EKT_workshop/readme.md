@@ -61,6 +61,7 @@ MacOS korral saab vastava keskonna käima, klikkides andmebaasi ikoonile. Linuxi
 
 <code>
 sudo su - postgres <br>
+   
 psql
 </code> 
 
@@ -70,8 +71,11 @@ Nüüd tuleb teha `psql` aknas järgmised sammud
 
 <code>
 CREATE DATABASE ekt;<br>
+   
 CREATE USER swen WITH PASSWORD 'kala'; <br>
+
 ALTER USER swen WITH PASSWORD 'kala'; <br>
+
 CREATE SCHEMA media_analysis;
 </code>
 
@@ -80,7 +84,7 @@ Esimene rida loob andmebaasi. Teine ja kolmas loovad ja muudavad Postgre serveri
 
 **Kui ei soovi või ei oska tarkvara installida, aga tahaks ikka töövahendeid ise katsetada:**
 
-Sellisel juhul tuleb instaleerida virtuaalmasin koos eelinstallitud  Ubuntu Linux operatsioonisüsteemiga:
+Sellisel juhul tuleb installida virtuaalmasin koos eelinstallitud  Ubuntu Linux operatsioonisüsteemiga:
 
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 * [VitualBox-i image](https://drive.google.com/open?id=1R8Cb2aIyMiD6KhvPyenR-yDYyyavxAnq)
