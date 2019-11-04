@@ -28,7 +28,7 @@ conda install -c estnltk -c conda-forge estnltk
 conda install jupyter
 </code>   
 
-4) Liikuda käsureal cd käsu abil kausta, kuhu on alla laaditud kirja manuses olev näidis (fail notebook-example.ipynb) ning käivitada näidis-notebook:
+4) Liikuda käsureal cd käsu abil kausta, kuhu on alla laaditud fail notebook-example.ipynb ning käivitada näidis-notebook:
 
 <code>
 jupyter notebook notebook-example
@@ -43,7 +43,7 @@ jupyter notebook notebook-example
 
 <code>
 conda install -n estnltk psycopg2 <br>
-   
+
 conda install -n estnltk -c conda-forge conllu <br>
 </code>
 
