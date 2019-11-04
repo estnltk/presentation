@@ -3,6 +3,7 @@
 **Autorid:** Dage Särg ja Sven Laur <br> 
 **Toimumisaeg:** 5. november 2019 <br>
 **Asukoht:** EKT konverents. Prototüübist teostuseni. Tallinn
+**Materjalid allalaadimiseks:** TODO
 
 ## Ettevalmistused õpitoas osalemiseks
 
@@ -28,7 +29,7 @@ conda install -c estnltk -c conda-forge estnltk
 conda install jupyter
 </code>   
 
-4) Liikuda käsureal cd käsu abil kausta, kuhu on alla laaditud fail notebook-example.ipynb ning käivitada näidis-notebook:
+4) Liikuda käsureal cd käsu abil kausta, kuhu on alla laaditud fail [notebook-example.ipynb](https://drive.google.com/file/d/12pdLl8J0KxoUJ6Mj-75-kpOzzUTSg-Ms/view?usp=sharing) ning käivitada näidis-notebook:
 
 <code>
 jupyter notebook notebook-example
@@ -71,11 +72,8 @@ Nüüd tuleb teha `psql` aknas järgmised sammud
 
 <code>
 CREATE DATABASE ekt;<br>
-   
 CREATE USER swen WITH PASSWORD 'kala'; <br>
-
 ALTER USER swen WITH PASSWORD 'kala'; <br>
-
 CREATE SCHEMA media_analysis;
 </code>
 
