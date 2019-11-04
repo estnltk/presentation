@@ -1,10 +1,11 @@
-# EstNLTK õpipada  
+# EstNLTK õpituba
 
 **Autorid:** Dage Särg ja Sven Laur <br> 
 **Toimumisaeg:** 5. november 2019 <br>
-**Asukoht:** EKT konverents. Prototüübist teostuseni. Tallinn
+**Asukoht:** EKT konverents. Prototüübist teostuseni. Tallinn <br>
+**Materjalid allalaadimiseks:** TODO
 
-## Ettevalmistused õpipajas osalemiseks
+## Ettevalmistused õpitoas osalemiseks
 
 Need, kes soovivad EstNLTK õpitoas näidatut kohe oma arvutis järgi proovida, peaksid selleks eelnevalt installima vajaliku tarkvara. 
 
@@ -28,7 +29,7 @@ conda install -c estnltk -c conda-forge estnltk
 conda install jupyter
 </code>   
 
-4) Liikuda käsureal cd käsu abil kausta, kuhu on alla laaditud kirja manuses olev näidis (fail notebook-example.ipynb) ning käivitada näidis-notebook:
+4) Liikuda käsureal cd käsu abil kausta, kuhu on alla laaditud fail [notebook-example.ipynb](https://drive.google.com/file/d/12pdLl8J0KxoUJ6Mj-75-kpOzzUTSg-Ms/view?usp=sharing) ning käivitada näidis-notebook:
 
 <code>
 jupyter notebook notebook-example
@@ -43,7 +44,7 @@ jupyter notebook notebook-example
 
 <code>
 conda install -n estnltk psycopg2 <br>
-   
+
 conda install -n estnltk -c conda-forge conllu <br>
 </code>
 
@@ -61,6 +62,7 @@ MacOS korral saab vastava keskonna käima, klikkides andmebaasi ikoonile. Linuxi
 
 <code>
 sudo su - postgres <br>
+   
 psql
 </code> 
 
@@ -80,7 +82,7 @@ Esimene rida loob andmebaasi. Teine ja kolmas loovad ja muudavad Postgre serveri
 
 **Kui ei soovi või ei oska tarkvara installida, aga tahaks ikka töövahendeid ise katsetada:**
 
-Sellisel juhul tuleb instaleerida virtuaalmasin koos eelinstallitud  Ubuntu Linux operatsioonisüsteemiga:
+Sellisel juhul tuleb installida virtuaalmasin koos eelinstallitud  Ubuntu Linux operatsioonisüsteemiga:
 
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 * [VitualBox-i image](https://drive.google.com/open?id=1R8Cb2aIyMiD6KhvPyenR-yDYyyavxAnq)
