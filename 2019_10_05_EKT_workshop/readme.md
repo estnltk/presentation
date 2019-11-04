@@ -43,6 +43,7 @@ jupyter notebook notebook-example
 
 <code>
 conda install -n estnltk psycopg2 <br>
+   
 conda install -n estnltk -c conda-forge conllu <br>
 </code>
 
