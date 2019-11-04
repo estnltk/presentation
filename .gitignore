@@ -1,0 +1,14 @@
+# IDE files
+.idea/
+build/
+
+# Pyhton
+*.pyc
+
+# Jupyter
+*.ipynb_checkpoints
+
+# MacOS
+.cache
+.DS_Store
+
