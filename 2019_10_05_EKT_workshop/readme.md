@@ -2,7 +2,7 @@
 
 **Autorid:** Dage Särg ja Sven Laur <br> 
 **Toimumisaeg:** 5. november 2019 <br>
-**Asukoht:** EKT konverents. Prototüübist teostuseni. Tallinn
+**Asukoht:** EKT konverents. Prototüübist teostuseni. Tallinn <br>
 **Materjalid allalaadimiseks:** TODO
 
 ## Ettevalmistused õpitoas osalemiseks
