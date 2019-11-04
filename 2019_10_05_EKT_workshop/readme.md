@@ -1,10 +1,10 @@
-# EstNLTK õpipada  
+# EstNLTK õpituba
 
 **Autorid:** Dage Särg ja Sven Laur <br> 
 **Toimumisaeg:** 5. november 2019 <br>
 **Asukoht:** EKT konverents. Prototüübist teostuseni. Tallinn
 
-## Ettevalmistused õpipajas osalemiseks
+## Ettevalmistused õpitoas osalemiseks
 
 Need, kes soovivad EstNLTK õpitoas näidatut kohe oma arvutis järgi proovida, peaksid selleks eelnevalt installima vajaliku tarkvara. 
 
