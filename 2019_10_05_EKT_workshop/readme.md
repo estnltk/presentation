@@ -15,25 +15,23 @@ Need, kes soovivad EstNLTK õpitoas näidatut kohe oma arvutis järgi proovida, 
 
 2) Avada terminaliaken ning luua ja aktiveerida conda keskkond, mis kasutab Python 3.6:
 
-<code>
+```
 conda create -n estnltk python=3.6 -y
-   
 conda activate estnltk
-</code>   
+```
 
 3) Installida loodud keskkonda EstNLTK 1.6 ning jupyter:
 
-<code>
+```
 conda install -c estnltk -c conda-forge estnltk
-   
 conda install jupyter
-</code>   
+```
 
 4) Liikuda käsureal cd käsu abil kausta, kuhu on alla laaditud fail [notebook-example.ipynb](https://drive.google.com/file/d/12pdLl8J0KxoUJ6Mj-75-kpOzzUTSg-Ms/view?usp=sharing) ning käivitada näidis-notebook:
 
-<code>
+```
 jupyter notebook notebook-example
-</code> 
+```
 
 5) Jooksutada Shift+Enter abil läbi notebookis olev koodilahter ning veenduda, et asi töötab
 
@@ -42,11 +40,10 @@ jupyter notebook notebook-example
 
 1) Installida loodud conda keskkonda psycopg2 ja conllu paketid:
 
-<code>
-conda install -n estnltk psycopg2 <br>
-
-conda install -n estnltk -c conda-forge conllu <br>
-</code>
+```
+conda install -n estnltk psycopg2 
+conda install -n estnltk -c conda-forge conllu 
+```
 
 2) Lokaalset Postgre serverit  
 
@@ -60,22 +57,21 @@ Järgnevalt oleks vaja luua ka andmebaas `ekt` ja andmebaasi kasutaja ning soovi
 
 MacOS korral saab vastava keskonna käima, klikkides andmebaasi ikoonile. Linuxis on vaja kahte rida:
 
-<code>
-sudo su - postgres <br>
-   
+```
+sudo su - postgres
 psql
-</code> 
+```
 
 Neist esimene viib meid õige kasutaja õigustesse ja teine paneb `psql` programmi tööle. 
 
 Nüüd tuleb teha `psql` aknas järgmised sammud
 
-<code>
-CREATE DATABASE ekt;<br>
-CREATE USER swen WITH PASSWORD 'kala'; <br>
-ALTER USER swen WITH PASSWORD 'kala'; <br>
+```
+CREATE DATABASE ekt;
+CREATE USER swen WITH PASSWORD 'kala';
+ALTER USER swen WITH PASSWORD 'kala'; 
 CREATE SCHEMA media_analysis;
-</code>
+```
 
 Esimene rida loob andmebaasi. Teine ja kolmas loovad ja muudavad Postgre serveri kasutaja tunnust. Neljas rida loob andmebaasi skeema.
 
