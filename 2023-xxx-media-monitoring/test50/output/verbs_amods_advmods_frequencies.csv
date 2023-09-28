@@ -1,0 +1,1373 @@
+lemma,freq,value
+string,integer,string
+halastamatu,1,amod
+suur,1,amod
+püha,1,amod
+hea,4,amod
+armas,1,amod
+absurdne,1,amod
+vaene,1,amod
+poolne,1,amod
+suurvõimas,1,amod
+kolmas,1,amod
+karge,1,amod
+kukkuma,1,amod
+vana,1,amod
+ainukene,1,amod
+endine,1,amod
+praegune,1,amod
+peamine,2,amod
+tänane,1,amod
+omavaheline,1,amod
+uus,1,amod
+lembene,1,amod
+järgmine,1,amod
+järjekordne,1,amod
+seesama,1,amod
+kukkuma,10,verb
+juhtuma,2,verb
+tegema,57,verb
+saama,65,verb
+jätkama,111,verb
+minema,28,verb
+olema,33,verb
+küsima,5,verb
+lugema,6,verb
+vaatama,12,verb
+teadma,19,verb
+esinema,6,verb
+lootma,2,verb
+arvama,10,verb
+kandideerima,12,verb
+käima,15,verb
+ütlema,90,verb
+makstud,1,verb
+tapma,1,verb
+esitama,13,verb
+nägema,9,verb
+müüma,3,verb
+teenima,3,verb
+juhatama,1,verb
+mäletama,2,verb
+võetud,1,verb
+tehtud,2,verb
+viskama,4,verb
+panema,11,verb
+välistama,1,verb
+küsinud,1,verb
+näitama,6,verb
+heitma,5,verb
+tulema,36,verb
+teinud,4,verb
+jääma,9,verb
+andma,21,verb
+püstituma,1,verb
+vastanduma,2,verb
+tõstatama,2,verb
+jõudma,9,verb
+meeldima,3,verb
+nõudma,2,verb
+ilmuma,9,verb
+tundma,3,verb
+seisma,5,verb
+pidanud,2,verb
+kohtama,1,verb
+otsustanud,2,verb
+liituma,1,verb
+võtma,21,verb
+tõestama,1,verb
+rääkima,28,verb
+võitma,3,verb
+jätkuma,4,verb
+kuuluma,6,verb
+väitma,6,verb
+kutsuma,8,verb
+väljendama,1,verb
+suutma,8,verb
+kinnitama,2,verb
+juhtima,14,verb
+alustama,8,verb
+saatma,5,verb
+pidama,8,verb
+toimuma,8,verb
+parandama,1,verb
+kratsima,1,verb
+saadetud,1,verb
+korraldama,4,verb
+mõjutama,3,verb
+lööma,3,verb
+vastama,6,verb
+kirjutama,22,verb
+maksma,5,verb
+laskma,6,verb
+kajastama,2,verb
+mainima,4,verb
+kuulama,2,verb
+hakkama,10,verb
+tahtma,12,verb
+kartma,3,verb
+pääsema,10,verb
+oskama,2,verb
+lõppenud,1,verb
+kahtlustama,1,verb
+tähendama,3,verb
+vedama,1,verb
+siduma,8,verb
+tekitama,2,verb
+teatama,8,verb
+genereerima,1,verb
+kohtuma,2,verb
+mängima,3,verb
+paluma,2,verb
+aimama,1,verb
+mõtlema,8,verb
+istuma,6,verb
+külastama,1,verb
+aitama,3,verb
+soovitama,2,verb
+prevaleerima,1,verb
+rõhuma,1,verb
+saanud,4,verb
+tooma,8,verb
+astuma,5,verb
+tõusma,6,verb
+otsima,2,verb
+hõlmama,1,verb
+matma,1,verb
+leidma,7,verb
+öelnud,5,verb
+moodustuma,1,verb
+pakkuma,3,verb
+uskuma,3,verb
+sõlmima,2,verb
+lubama,6,verb
+otsustama,3,verb
+tajuma,1,verb
+keskenduma,2,verb
+ajama,1,verb
+öeldud,2,verb
+muutma,6,verb
+omama,1,verb
+lähtuma,1,verb
+toetama,5,verb
+tellima,2,verb
+eksima,2,verb
+tunduma,2,verb
+kritiseerima,1,verb
+soovima,8,verb
+lükkama,1,verb
+edestama,1,verb
+esitatud,1,verb
+jõuduma,1,verb
+kaitsma,2,verb
+astunud,1,verb
+lisama,2,verb
+silmama,2,verb
+väljastama,1,verb
+hoiduma,1,verb
+selguma,1,verb
+suutnud,1,verb
+virutanud,1,verb
+puutuma,4,verb
+kihama,1,verb
+õnnestuma,2,verb
+looma,3,verb
+ennustama,1,verb
+keelduma,1,verb
+õppinud,1,verb
+kahtlema,1,verb
+muutunud,1,verb
+toonud,2,verb
+seletama,2,verb
+töötama,3,verb
+nähtuma,1,verb
+organiseerima,1,verb
+ootama,3,verb
+taganema,1,verb
+räägitud,1,verb
+nimetama,3,verb
+sõitma,2,verb
+partsima,1,verb
+üllatama,2,verb
+vajama,1,verb
+pääsenud,1,verb
+kuulma,4,verb
+püüdma,3,verb
+saavutama,2,verb
+märkima,2,verb
+meenutama,2,verb
+kordama,4,verb
+ehitama,3,verb
+vihjama,1,verb
+kavatsema,2,verb
+paistma,3,verb
+toimunud,1,verb
+vaidlema,2,verb
+kaitsema,1,verb
+jälgima,2,verb
+vahetama,1,verb
+tüütama,1,verb
+läinud,3,verb
+jätma,1,verb
+hääletama,4,verb
+olnud,1,verb
+toetanud,1,verb
+viitama,3,verb
+andnud,1,verb
+kantima,1,verb
+tuletama,1,verb
+laulma,5,verb
+leppima,2,verb
+edendama,1,verb
+tegelema,4,verb
+tuntud,1,verb
+sattuma,5,verb
+lahkuma,6,verb
+lõpma,1,verb
+väsima,1,verb
+võrdlema,2,verb
+kujutama,1,verb
+segama,1,verb
+kiitma,1,verb
+rõhutama,2,verb
+kasvanud,2,verb
+valima,8,verb
+elama,4,verb
+varastama,1,verb
+lõhkuma,1,verb
+tunnistama,2,verb
+kuluma,1,verb
+kirjeldama,2,verb
+esindama,4,verb
+suvatsema,1,verb
+sihitud,1,verb
+asuma,4,verb
+tootma,1,verb
+kasvama,1,verb
+lõpetama,2,verb
+eemaldatud,1,verb
+erinema,1,verb
+ületama,2,verb
+tulnud,2,verb
+avaldama,3,verb
+kulgema,1,verb
+kvalifitseeruma,1,verb
+tõstma,2,verb
+puudutama,5,verb
+tegutsema,1,verb
+noogutama,1,verb
+küsitud,1,verb
+venima,1,verb
+hoidma,3,verb
+vältima,1,verb
+kehtestatud,1,verb
+seotud,1,verb
+reageerima,1,verb
+põhjendama,1,verb
+toimetama,1,verb
+kommunikeerima,1,verb
+pöörduma,1,verb
+umbusaldama,1,verb
+raporteerima,1,verb
+kaebama,1,verb
+raputama,2,verb
+langema,1,verb
+rääkinud,2,verb
+viima,5,verb
+toitma,1,verb
+magama,1,verb
+saastama,1,verb
+tõmbama,3,verb
+viinud,2,verb
+rabelema,1,verb
+arutama,1,verb
+kuulutama,1,verb
+lähetama,1,verb
+võitlema,1,verb
+koguma,1,verb
+sõnastama,3,verb
+käituma,1,verb
+mõistma,1,verb
+kuritarvitama,1,verb
+kaasatud,1,verb
+seadma,2,verb
+häbistanud,2,verb
+kaduma,1,verb
+likvideerima,1,verb
+helistama,2,verb
+sosistama,1,verb
+innustama,2,verb
+kõrvaldama,1,verb
+toimima,1,verb
+uurima,1,verb
+restruktureerima,1,verb
+kaotama,1,verb
+varjama,2,verb
+keelama,1,verb
+pildistama,1,verb
+võtnud,1,verb
+tagama,1,verb
+tsiteerima,1,verb
+julgema,2,verb
+pakkunud,1,verb
+pooldama,1,verb
+dubleerima,1,verb
+integreerima,1,verb
+elanud,1,verb
+tabama,1,verb
+sündima,1,verb
+ratifitseerima,1,verb
+pandud,2,verb
+väljuma,1,verb
+kalduma,1,verb
+nokkima,2,verb
+haarama,1,verb
+saabuma,1,verb
+proovima,1,verb
+naeratama,1,verb
+valitud,1,verb
+üritama,1,verb
+määrama,1,verb
+pannud,1,verb
+puhuma,1,verb
+raiuma,1,verb
+provotseerima,1,verb
+lisatud,1,verb
+ühinema,3,verb
+huvitama,1,verb
+meenuma,1,verb
+pöörama,1,verb
+jagama,3,verb
+koostama,1,verb
+sattunud,1,verb
+arutlema,1,verb
+niimatama,1,verb
+nuputama,1,verb
+hiilima,1,verb
+liikuma,2,verb
+tõstetud,1,verb
+mahtuma,1,verb
+muutuma,1,verb
+vingerdama,1,verb
+avalikustama,1,verb
+meelitama,1,verb
+mõnulema,1,verb
+prognoosinud,1,verb
+jälginud,1,verb
+jalutama,1,verb
+taotlema,1,verb
+valmima,2,verb
+usaldama,1,verb
+nihutama,2,verb
+tekkima,2,verb
+rajama,1,verb
+suunama,1,verb
+tere,5,advmod
+siin,32,advmod
+natuke,1,advmod
+selgelt,6,advmod
+eks,14,advmod
+siis,218,advmod
+nüüd,64,advmod
+tõepoolest,7,advmod
+näiteks,4,advmod
+öösel,1,advmod
+vaid,1,advmod
+nii,31,advmod
+tegelikult,24,advmod
+ka,20,advmod
+ju,24,advmod
+täpselt,3,advmod
+tähele,2,advmod
+ausalt,1,advmod
+aga,31,advmod
+küll,19,advmod
+omaette,1,advmod
+niimoodi,12,advmod
+kas,33,advmod
+üldse,6,advmod
+siia,2,advmod
+pisut,1,advmod
+rohkem,7,advmod
+näide,11,advmod
+vähem,3,advmod
+vaat,1,advmod
+kohe,3,advmod
+teadupärast,1,advmod
+veel,7,advmod
+isegi,3,advmod
+noh,14,advmod
+väljas,1,advmod
+valesti,3,advmod
+praegu,12,advmod
+seekord,2,advmod
+tõesti,6,advmod
+jaa,1,advmod
+vist,5,advmod
+vastupidi,3,advmod
+täna,7,advmod
+retooriliselt,1,advmod
+negatiivselt,3,advmod
+muidugi,8,advmod
+palju,7,advmod
+nimelt,2,advmod
+juba,13,advmod
+seal,24,advmod
+vanasti,1,advmod
+teatavasti,8,advmod
+kusagilt,1,advmod
+ilmselt,4,advmod
+jälle,2,advmod
+eile,3,advmod
+tookord,3,advmod
+siiski,3,advmod
+lõpuks,7,advmod
+täitsa,1,advmod
+sihuke,1,advmod
+tavaliselt,1,advmod
+ise,6,advmod
+pärast,1,advmod
+kunagi,8,advmod
+ootamatult,3,advmod
+lihtsalt,5,advmod
+alati,1,advmod
+ikkagi,12,advmod
+tõenäoliselt,5,advmod
+täielikult,1,advmod
+tuimalt,1,advmod
+samas,2,advmod
+kindlasti,10,advmod
+hiljem,1,advmod
+ükskõik,2,advmod
+muidu,2,advmod
+ikka,9,advmod
+ometigi,1,advmod
+siiani,1,advmod
+vähemalt,2,advmod
+varem,1,advmod
+puhtalt,1,advmod
+isiklikult,3,advmod
+võib-olla,6,advmod
+samuti,1,advmod
+korduvalt,3,advmod
+enne,2,advmod
+lagedale,1,advmod
+iial,1,advmod
+tänaselt,1,advmod
+andeks,1,advmod
+hästi,6,advmod
+ees,1,advmod
+pikalt,2,advmod
+teistmoodi,1,advmod
+edasi,1,advmod
+samamoodi,3,advmod
+selgepiiriliselt,1,advmod
+kuskil,2,advmod
+korraks,4,advmod
+otseselt,2,advmod
+vahepeal,2,advmod
+vaevalt,1,advmod
+eriti,1,advmod
+varsti,1,advmod
+seni,2,advmod
+selgesti,1,advmod
+mispärast,3,advmod
+otse,2,advmod
+väidetavalt,1,advmod
+õieti,1,advmod
+selliselt,3,advmod
+enam,5,advmod
+kahtlemata,2,advmod
+sinna,8,advmod
+taas,2,advmod
+paralleelselt,1,advmod
+üksi,2,advmod
+kuidagi,2,advmod
+kahjuks,1,advmod
+natukene,7,advmod
+tagantjärele,1,advmod
+ammu,1,advmod
+just,3,advmod
+ei,2,advmod
+avalikult,2,advmod
+jah,4,advmod
+hoogsalt,1,advmod
+segi,1,advmod
+fantaasiavaeselt,1,advmod
+üldiselt,3,advmod
+siinkohal,2,advmod
+no,2,advmod
+nii-öelda,12,advmod
+kõvasti,2,advmod
+sellepärast,7,advmod
+vaikselt,3,advmod
+anonüümselt,1,advmod
+väga,3,advmod
+pigem,3,advmod
+kuhugi,1,advmod
+Ligi,2,advmod
+mitte,2,advmod
+toona,1,advmod
+ennekõike,1,advmod
+vähe,1,advmod
+tõsiselt,1,advmod
+kõigepealt,1,advmod
+halvasti,1,advmod
+algul,1,advmod
+hukka,1,advmod
+rängalt,1,advmod
+liiga,2,advmod
+mõnusalt,1,advmod
+tingimata,2,advmod
+uuesti,2,advmod
+okei,1,advmod
+nagunii,1,advmod
+jõuliselt,1,advmod
+loomulikult,3,advmod
+tingimuslikult,1,advmod
+absoluutselt,2,advmod
+jätkuvalt,1,advmod
+seisukoht,1,advmod
+ega,3,advmod
+aktiivselt,1,advmod
+millegipärast,1,advmod
+iseenesest,1,advmod
+pehmelt,1,advmod
+kangesti,1,advmod
+konkreetselt,2,advmod
+hirmsasti,1,advmod
+üleolevalt,1,advmod
+vasakule,1,advmod
+niikaua,2,advmod
+siseselt,2,advmod
+sisuliselt,1,advmod
+võimsalt,1,advmod
+muudmoodi,1,advmod
+äsja,1,advmod
+rahulikult,1,advmod
+ometi,1,advmod
+suhteliselt,2,advmod
+siiamaani,1,advmod
+korraga,1,advmod
+kohe-kohe,2,advmod
+hoopis,1,advmod
+plaks,1,advmod
+koos,1,advmod
+ehk,1,advmod
+sinnasamasse,1,advmod
+suurepäraselt,1,advmod
+sajaprotsendiliselt,1,advmod
+kõhuli,1,advmod
+kindlalt,1,advmod
+põhjalikult,1,advmod
+hulgi,1,advmod
+närviliselt,1,advmod
+etteotsa,2,advmod
+enesekindlalt,1,advmod
+kukkuma tere,2,verb+advmod
+kukkuma siin,7,verb+advmod
+juhtuma siin,1,verb+advmod
+tegema natuke,1,verb+advmod
+olema selgelt,1,verb+advmod
+olema eks,1,verb+advmod
+olema siis,8,verb+advmod
+küsima nüüd,1,verb+advmod
+küsima siis,2,verb+advmod
+vaatama siis,2,verb+advmod
+vaatama tõepoolest,1,verb+advmod
+arvama näiteks,1,verb+advmod
+ütlema öösel,1,verb+advmod
+teadma siis,2,verb+advmod
+tapma vaid,1,verb+advmod
+nägema siin,1,verb+advmod
+müüma siis,1,verb+advmod
+teenima siis,3,verb+advmod
+mäletama nii,1,verb+advmod
+tegema tegelikult,3,verb+advmod
+tegema ka,2,verb+advmod
+tegema ju,2,verb+advmod
+panema täpselt,1,verb+advmod
+panema tähele,2,verb+advmod
+küsinud ausalt,1,verb+advmod
+küsinud aga,1,verb+advmod
+tulema küll,1,verb+advmod
+tegema küll,1,verb+advmod
+tegema aga,4,verb+advmod
+tegema siis,17,verb+advmod
+teinud küll,1,verb+advmod
+jääma siis,2,verb+advmod
+vastanduma omaette,1,verb+advmod
+tõstatama niimoodi,2,verb+advmod
+jõudma kas,1,verb+advmod
+jõudma üldse,1,verb+advmod
+tulema aga,1,verb+advmod
+tulema siia,1,verb+advmod
+tulema pisut,1,verb+advmod
+meeldima rohkem,1,verb+advmod
+ilmuma näide,1,verb+advmod
+ilmuma nüüd,1,verb+advmod
+saama siis,11,verb+advmod
+seisma vähem,1,verb+advmod
+seisma vaat,1,verb+advmod
+kohtama ka,1,verb+advmod
+otsustanud siis,1,verb+advmod
+jätkama siin,1,verb+advmod
+jätkama aga,2,verb+advmod
+võtma kohe,1,verb+advmod
+rääkima teadupärast,1,verb+advmod
+ütlema siis,12,verb+advmod
+võitma aga,1,verb+advmod
+jõudma veel,1,verb+advmod
+jõudma siis,2,verb+advmod
+jõudma isegi,1,verb+advmod
+väitma noh,1,verb+advmod
+väljendama väljas,1,verb+advmod
+väljendama valesti,1,verb+advmod
+suutma praegu,1,verb+advmod
+tegema kas,2,verb+advmod
+tegema seekord,1,verb+advmod
+tegema tõesti,1,verb+advmod
+kutsuma ju,1,verb+advmod
+korraldama siis,2,verb+advmod
+vastama jaa,1,verb+advmod
+vastama aga,2,verb+advmod
+saama vist,1,verb+advmod
+kirjutama nüüd,3,verb+advmod
+kirjutama vastupidi,2,verb+advmod
+kirjutama eks,2,verb+advmod
+maksma siis,5,verb+advmod
+võtma siis,3,verb+advmod
+lugema täna,1,verb+advmod
+teadma retooriliselt,1,verb+advmod
+käima siis,3,verb+advmod
+teinud kas,1,verb+advmod
+nägema kas,2,verb+advmod
+kajastama negatiivselt,2,verb+advmod
+kajastama siis,2,verb+advmod
+hakkama siis,1,verb+advmod
+esitama üldse,1,verb+advmod
+kartma aga,2,verb+advmod
+kartma seekord,1,verb+advmod
+tegema muidugi,2,verb+advmod
+panema noh,1,verb+advmod
+saama palju,1,verb+advmod
+oskama küll,1,verb+advmod
+andma siis,3,verb+advmod
+andma aga,1,verb+advmod
+minema siis,7,verb+advmod
+minema nimelt,1,verb+advmod
+tähendama juba,1,verb+advmod
+tähendama selgelt,1,verb+advmod
+tähendama seal,1,verb+advmod
+vedama siis,1,verb+advmod
+vedama palju,1,verb+advmod
+panema vanasti,1,verb+advmod
+panema aga,1,verb+advmod
+panema siis,2,verb+advmod
+teadma täpselt,2,verb+advmod
+teadma aga,2,verb+advmod
+kirjutama nii,2,verb+advmod
+kirjutama teatavasti,2,verb+advmod
+ütlema aga,2,verb+advmod
+saama kusagilt,1,verb+advmod
+saama ilmselt,1,verb+advmod
+genereerima jälle,1,verb+advmod
+laskma eile,1,verb+advmod
+nõudma tegelikult,1,verb+advmod
+saama niimoodi,2,verb+advmod
+saama valesti,2,verb+advmod
+saama tookord,1,verb+advmod
+saama nüüd,1,verb+advmod
+saama näide,2,verb+advmod
+aitama siiski,1,verb+advmod
+aitama aga,1,verb+advmod
+tulema siis,9,verb+advmod
+pääsema nüüd,1,verb+advmod
+pääsema siis,3,verb+advmod
+saama lõpuks,1,verb+advmod
+saama tegelikult,2,verb+advmod
+saama täitsa,1,verb+advmod
+prevaleerima seal,1,verb+advmod
+tahtma siis,3,verb+advmod
+tahtma sihuke,1,verb+advmod
+tahtma kas,1,verb+advmod
+tahtma tavaliselt,1,verb+advmod
+teenima ise,2,verb+advmod
+andma ka,1,verb+advmod
+andma kas,2,verb+advmod
+ütlema pärast,1,verb+advmod
+ütlema tegelikult,1,verb+advmod
+astuma siin,1,verb+advmod
+minema kunagi,3,verb+advmod
+tõusma ootamatult,1,verb+advmod
+otsima lihtsalt,1,verb+advmod
+otsima alati,1,verb+advmod
+rääkima siin,1,verb+advmod
+hõlmama tegelikult,1,verb+advmod
+hõlmama küll,1,verb+advmod
+matma siis,1,verb+advmod
+matma ju,1,verb+advmod
+leidma seal,1,verb+advmod
+leidma siis,2,verb+advmod
+öelnud tegelikult,1,verb+advmod
+moodustuma nii,1,verb+advmod
+pakkuma siis,1,verb+advmod
+andma noh,1,verb+advmod
+andma lõpuks,1,verb+advmod
+tegema siin,1,verb+advmod
+tegema veel,1,verb+advmod
+jätkama siiski,1,verb+advmod
+tooma nii,1,verb+advmod
+lubama tegelikult,1,verb+advmod
+otsustama nüüd,1,verb+advmod
+otsustama küll,1,verb+advmod
+tajuma aga,1,verb+advmod
+keskenduma ikkagi,1,verb+advmod
+kandideerima kas,2,verb+advmod
+andma tegelikult,2,verb+advmod
+muutma tegelikult,1,verb+advmod
+muutma tõenäoliselt,1,verb+advmod
+uskuma tegelikult,1,verb+advmod
+saama seal,3,verb+advmod
+juhtima tegelikult,2,verb+advmod
+juhtima siis,2,verb+advmod
+lähtuma täielikult,1,verb+advmod
+ütlema täna,2,verb+advmod
+ütlema ikkagi,1,verb+advmod
+juhtima nüüd,1,verb+advmod
+võtma tuimalt,1,verb+advmod
+tulema kohe,1,verb+advmod
+eksima samas,1,verb+advmod
+eksima siis,1,verb+advmod
+mäletama kindlasti,1,verb+advmod
+mäletama hiljem,1,verb+advmod
+korraldama ükskõik,1,verb+advmod
+korraldama kas,1,verb+advmod
+lükkama nüüd,1,verb+advmod
+lükkama muidu,1,verb+advmod
+tahtma ilmselt,1,verb+advmod
+pidama kindlasti,1,verb+advmod
+pidama rohkem,1,verb+advmod
+pidama noh,1,verb+advmod
+teadma lõpuks,1,verb+advmod
+teadma ikka,1,verb+advmod
+teadma lihtsalt,1,verb+advmod
+jõuduma siis,1,verb+advmod
+toimuma siis,2,verb+advmod
+toimuma tegelikult,2,verb+advmod
+toimuma lihtsalt,1,verb+advmod
+pakkuma tookord,1,verb+advmod
+väljastama ometigi,1,verb+advmod
+hoiduma siiani,1,verb+advmod
+selguma siis,1,verb+advmod
+selguma noh,1,verb+advmod
+tulema kas,2,verb+advmod
+tulema noh,1,verb+advmod
+tulema tegelikult,2,verb+advmod
+suutnud vähemalt,1,verb+advmod
+käima kunagi,1,verb+advmod
+käima varem,1,verb+advmod
+virutanud nüüd,1,verb+advmod
+virutanud puhtalt,1,verb+advmod
+küsima täna,2,verb+advmod
+käima isiklikult,1,verb+advmod
+ütlema nii,4,verb+advmod
+puutuma seal,1,verb+advmod
+puutuma rohkem,1,verb+advmod
+esitama siis,1,verb+advmod
+pidama siis,2,verb+advmod
+pidama näide,1,verb+advmod
+pidama ju,1,verb+advmod
+olema nii,1,verb+advmod
+tegema vähem,1,verb+advmod
+olema rohkem,2,verb+advmod
+õnnestuma siis,2,verb+advmod
+õnnestuma aga,1,verb+advmod
+õnnestuma võib-olla,1,verb+advmod
+leidma samuti,1,verb+advmod
+ütlema praegu,2,verb+advmod
+ennustama lõpuks,1,verb+advmod
+ennustama nii,1,verb+advmod
+ennustama korduvalt,1,verb+advmod
+õppinud muidugi,1,verb+advmod
+andma enne,1,verb+advmod
+andma eile,1,verb+advmod
+andma vist,1,verb+advmod
+toonud siis,2,verb+advmod
+toonud nüüd,1,verb+advmod
+toonud lagedale,1,verb+advmod
+ütlema siin,2,verb+advmod
+toimuma seal,1,verb+advmod
+seisma siis,2,verb+advmod
+seisma nüüd,1,verb+advmod
+saanud iial,1,verb+advmod
+ootama siis,1,verb+advmod
+ootama ikka,1,verb+advmod
+ootama näide,1,verb+advmod
+ootama tänaselt,1,verb+advmod
+rääkima andeks,1,verb+advmod
+rääkima hästi,1,verb+advmod
+tõusma küll,1,verb+advmod
+tõusma aga,1,verb+advmod
+aitama nüüd,1,verb+advmod
+sõitma ees,1,verb+advmod
+ütlema niimoodi,2,verb+advmod
+kirjutama pikalt,1,verb+advmod
+partsima siis,1,verb+advmod
+saatma eks,2,verb+advmod
+tegema teistmoodi,1,verb+advmod
+kirjutama edasi,1,verb+advmod
+hakkama näiteks,1,verb+advmod
+üllatama samamoodi,1,verb+advmod
+tulema nüüd,6,verb+advmod
+tulema selgepiiriliselt,1,verb+advmod
+pääsenud kuskil,1,verb+advmod
+kuulma siin,1,verb+advmod
+jätkuma korraks,1,verb+advmod
+jätkuma aga,1,verb+advmod
+püüdma seal,1,verb+advmod
+kirjutama siis,2,verb+advmod
+jätkama otseselt,1,verb+advmod
+meenutama vähem,1,verb+advmod
+meenutama tegelikult,1,verb+advmod
+meenutama nüüd,1,verb+advmod
+kordama vahepeal,1,verb+advmod
+kordama aga,1,verb+advmod
+kordama vaevalt,1,verb+advmod
+rääkima nüüd,3,verb+advmod
+rääkima siis,3,verb+advmod
+märkima eriti,1,verb+advmod
+võitma siis,1,verb+advmod
+hakkama varsti,1,verb+advmod
+kohtuma siis,1,verb+advmod
+kohtuma teatavasti,1,verb+advmod
+heitma nii,1,verb+advmod
+tulema korraks,1,verb+advmod
+tegema seal,1,verb+advmod
+tegema ikka,1,verb+advmod
+toimunud vastupidi,1,verb+advmod
+toimunud nii,1,verb+advmod
+toimunud ju,1,verb+advmod
+toimunud ka,1,verb+advmod
+uskuma siis,1,verb+advmod
+alustama seni,1,verb+advmod
+alustama näide,1,verb+advmod
+alustama nüüd,1,verb+advmod
+saama selgesti,1,verb+advmod
+mõtlema korraks,1,verb+advmod
+vahetama mispärast,1,verb+advmod
+vahetama siis,1,verb+advmod
+võtma otse,1,verb+advmod
+toetama siis,2,verb+advmod
+toetama ikkagi,1,verb+advmod
+mängima aga,2,verb+advmod
+andnud siis,1,verb+advmod
+kantima siis,1,verb+advmod
+kantima väidetavalt,1,verb+advmod
+tegema õieti,1,verb+advmod
+ütlema selliselt,1,verb+advmod
+ütlema kindlasti,2,verb+advmod
+kutsuma siis,2,verb+advmod
+vastama siis,1,verb+advmod
+vastama enam,1,verb+advmod
+ütlema näide,1,verb+advmod
+suutma seal,1,verb+advmod
+suutma nüüd,1,verb+advmod
+laulma siin,1,verb+advmod
+tulema teatavasti,1,verb+advmod
+edendama seal,1,verb+advmod
+paluma siis,1,verb+advmod
+teadma ju,3,verb+advmod
+saama kahtlemata,2,verb+advmod
+tulema siin,2,verb+advmod
+tulema eks,1,verb+advmod
+tulema ju,2,verb+advmod
+tuntud nii,1,verb+advmod
+sattuma ootamatult,1,verb+advmod
+tegema sinna,1,verb+advmod
+lahkuma ootamatult,1,verb+advmod
+jätkama taas,1,verb+advmod
+lõpma paralleelselt,1,verb+advmod
+lõpma ikkagi,1,verb+advmod
+lõpma ju,1,verb+advmod
+saama kas,2,verb+advmod
+saama näiteks,1,verb+advmod
+saama ka,2,verb+advmod
+tegema nii,2,verb+advmod
+kujutama praegu,1,verb+advmod
+kujutama üksi,1,verb+advmod
+kujutama ju,1,verb+advmod
+mõjutama kas,2,verb+advmod
+mõjutama tõesti,2,verb+advmod
+teadma kas,2,verb+advmod
+jätkama nii,1,verb+advmod
+segama aga,1,verb+advmod
+ütlema isegi,1,verb+advmod
+rõhutama veel,1,verb+advmod
+andma eks,1,verb+advmod
+saama täna,1,verb+advmod
+valima siis,3,verb+advmod
+elama kuidagi,1,verb+advmod
+elama seal,1,verb+advmod
+elama hästi,1,verb+advmod
+elama siis,1,verb+advmod
+kandideerima siis,2,verb+advmod
+varastama eks,1,verb+advmod
+varastama siis,1,verb+advmod
+võtma noh,2,verb+advmod
+võtma lihtsalt,1,verb+advmod
+võtma kahjuks,1,verb+advmod
+saama üldse,1,verb+advmod
+tunnistama siin,1,verb+advmod
+tunnistama ka,1,verb+advmod
+kuluma siis,1,verb+advmod
+kuluma tõenäoliselt,1,verb+advmod
+toimuma tõepoolest,2,verb+advmod
+toimuma praegu,1,verb+advmod
+kirjeldama eile,1,verb+advmod
+esindama siis,3,verb+advmod
+kaitsma natukene,1,verb+advmod
+asuma üldse,1,verb+advmod
+tootma tagantjärele,1,verb+advmod
+tulema juba,1,verb+advmod
+sattuma nüüd,2,verb+advmod
+ütlema ikka,1,verb+advmod
+kasvama ammu,1,verb+advmod
+küsima sinna,1,verb+advmod
+tegema teatavasti,1,verb+advmod
+esindama hästi,1,verb+advmod
+ütlema just,1,verb+advmod
+rõhutama aga,1,verb+advmod
+kirjutama näide,1,verb+advmod
+lisama otse,1,verb+advmod
+minema kas,3,verb+advmod
+minema lõpuks,1,verb+advmod
+viskama kas,1,verb+advmod
+kirjutama ei,1,verb+advmod
+jätkama üldse,1,verb+advmod
+öeldud ise,1,verb+advmod
+öeldud avalikult,1,verb+advmod
+erinema siis,1,verb+advmod
+astuma nüüd,1,verb+advmod
+astuma korraks,1,verb+advmod
+ületama jah,1,verb+advmod
+tulnud siis,1,verb+advmod
+üllatama ju,1,verb+advmod
+kulgema hoogsalt,1,verb+advmod
+kvalifitseeruma ei,1,verb+advmod
+kvalifitseeruma aga,1,verb+advmod
+kvalifitseeruma noh,1,verb+advmod
+lööma nüüd,1,verb+advmod
+lööma ikkagi,1,verb+advmod
+lööma segi,1,verb+advmod
+esinema küll,1,verb+advmod
+esinema tõepoolest,1,verb+advmod
+esinema fantaasiavaeselt,1,verb+advmod
+esinema siin,1,verb+advmod
+esinema üldiselt,1,verb+advmod
+tõstma nüüd,1,verb+advmod
+tõstma nii,1,verb+advmod
+tulema veel,1,verb+advmod
+minema rohkem,1,verb+advmod
+hääletama siis,2,verb+advmod
+jätkama siinkohal,1,verb+advmod
+tegutsema siis,1,verb+advmod
+tegutsema nii,1,verb+advmod
+noogutama just,1,verb+advmod
+noogutama aga,1,verb+advmod
+küsitud siis,1,verb+advmod
+ütlema küll,2,verb+advmod
+soovima no,2,verb+advmod
+rääkima üksi,1,verb+advmod
+rääkima juba,1,verb+advmod
+hoidma noh,1,verb+advmod
+vältima nii-öelda,2,verb+advmod
+saama kindlasti,1,verb+advmod
+kandideerima teatavasti,1,verb+advmod
+kavatsema nüüd,1,verb+advmod
+saama juba,1,verb+advmod
+seotud ikkagi,1,verb+advmod
+seotud otseselt,1,verb+advmod
+maksma küll,1,verb+advmod
+maksma kõvasti,1,verb+advmod
+mõtlema praegu,1,verb+advmod
+vaatama noh,1,verb+advmod
+vaatama lihtsalt,1,verb+advmod
+reageerima siis,1,verb+advmod
+reageerima nüüd,1,verb+advmod
+istuma ju,1,verb+advmod
+istuma praegu,1,verb+advmod
+põhjendama ju,1,verb+advmod
+tegema näide,1,verb+advmod
+ütlema negatiivselt,1,verb+advmod
+saama sellepärast,2,verb+advmod
+saama noh,1,verb+advmod
+olema nüüd,2,verb+advmod
+toimetama seal,1,verb+advmod
+toimetama vaikselt,1,verb+advmod
+tegema nüüd,1,verb+advmod
+kommunikeerima siis,1,verb+advmod
+kommunikeerima tegelikult,1,verb+advmod
+kommunikeerima ju,1,verb+advmod
+kommunikeerima nii-öelda,1,verb+advmod
+pöörduma mispärast,1,verb+advmod
+umbusaldama siis,1,verb+advmod
+jätkama samamoodi,1,verb+advmod
+arvama kas,1,verb+advmod
+arvama samamoodi,1,verb+advmod
+otsustama siis,1,verb+advmod
+otsustama ju,1,verb+advmod
+otsustama tookord,1,verb+advmod
+pidama anonüümselt,1,verb+advmod
+soovima siis,2,verb+advmod
+puutuma siis,2,verb+advmod
+puutuma isiklikult,1,verb+advmod
+puutuma ilmselt,1,verb+advmod
+olema kas,1,verb+advmod
+tegema näiteks,1,verb+advmod
+olema juba,2,verb+advmod
+langema tõesti,1,verb+advmod
+langema kunagi,1,verb+advmod
+rääkinud siin,1,verb+advmod
+rääkinud palju,1,verb+advmod
+tahtma väga,1,verb+advmod
+olema pigem,1,verb+advmod
+kuulma natukene,1,verb+advmod
+viima siis,1,verb+advmod
+viima kuhugi,1,verb+advmod
+minema sinna,2,verb+advmod
+kartma seal,1,verb+advmod
+kartma ikka,1,verb+advmod
+kartma väga,1,verb+advmod
+öelnud natukene,1,verb+advmod
+jääma nüüd,1,verb+advmod
+lubama Ligi,2,verb+advmod
+lubama siis,2,verb+advmod
+lubama vist,2,verb+advmod
+tegema jah,1,verb+advmod
+muutma nii,1,verb+advmod
+jätkama tere,2,verb+advmod
+tulnud nüüd,1,verb+advmod
+tahtma nii,2,verb+advmod
+tahtma tõenäoliselt,1,verb+advmod
+käima teatavasti,1,verb+advmod
+istuma mitte,1,verb+advmod
+saama muidu,1,verb+advmod
+ütlema toona,1,verb+advmod
+hakkama kindlasti,1,verb+advmod
+minema eks,1,verb+advmod
+tulema ennekõike,1,verb+advmod
+muutma võib-olla,1,verb+advmod
+muutma seal,1,verb+advmod
+muutma veel,1,verb+advmod
+muutma sellepärast,1,verb+advmod
+muutma vähe,1,verb+advmod
+ütlema seal,2,verb+advmod
+võtma tõsiselt,1,verb+advmod
+minema natukene,1,verb+advmod
+tegema lõpuks,1,verb+advmod
+minema enam,1,verb+advmod
+mainima ka,1,verb+advmod
+mainima siis,1,verb+advmod
+ütlema ka,1,verb+advmod
+ütlema kõigepealt,1,verb+advmod
+minema palju,1,verb+advmod
+käituma halvasti,1,verb+advmod
+ütlema algul,1,verb+advmod
+ütlema noh,1,verb+advmod
+mõistma hukka,1,verb+advmod
+öelnud ise,1,verb+advmod
+tegema rängalt,1,verb+advmod
+tegema liiga,2,verb+advmod
+panema niimoodi,1,verb+advmod
+panema mõnusalt,1,verb+advmod
+juhtima seni,1,verb+advmod
+saanud täna,1,verb+advmod
+saanud siiski,1,verb+advmod
+kaasatud isegi,1,verb+advmod
+alustama siis,1,verb+advmod
+valima tingimata,1,verb+advmod
+valima ikkagi,1,verb+advmod
+valima üldiselt,1,verb+advmod
+valima nüüd,1,verb+advmod
+valima uuesti,1,verb+advmod
+suutma kindlasti,1,verb+advmod
+suutma ju,1,verb+advmod
+leppima okei,1,verb+advmod
+leppima lõpuks,1,verb+advmod
+leidma nii,1,verb+advmod
+leidma nagunii,1,verb+advmod
+panema ikkagi,2,verb+advmod
+panema palju,2,verb+advmod
+panema siin,2,verb+advmod
+hakkama nüüd,1,verb+advmod
+pidanud üldiselt,1,verb+advmod
+tõmbama siis,2,verb+advmod
+tõmbama nii,1,verb+advmod
+ütlema jõuliselt,1,verb+advmod
+tulema kindlasti,1,verb+advmod
+näitama ikkagi,1,verb+advmod
+vastama loomulikult,1,verb+advmod
+saama just,1,verb+advmod
+saama tingimuslikult,1,verb+advmod
+asuma ilmselt,1,verb+advmod
+kandideerima sellepärast,1,verb+advmod
+kandideerima selliselt,1,verb+advmod
+näitama siis,1,verb+advmod
+käima ka,1,verb+advmod
+suutma enam,1,verb+advmod
+juhtima võib-olla,1,verb+advmod
+lubama näide,1,verb+advmod
+innustama absoluutselt,1,verb+advmod
+toimima ise,1,verb+advmod
+maksma jätkuvalt,1,verb+advmod
+andma nii-öelda,1,verb+advmod
+tunnistama siis,1,verb+advmod
+tunnistama niimoodi,1,verb+advmod
+nägema ka,1,verb+advmod
+nägema siis,1,verb+advmod
+soovima loomulikult,1,verb+advmod
+tahtma nüüd,1,verb+advmod
+tahtma küll,1,verb+advmod
+olema praegu,1,verb+advmod
+istuma kas,1,verb+advmod
+istuma siis,1,verb+advmod
+istuma seal,1,verb+advmod
+istuma jälle,1,verb+advmod
+istuma vaikselt,1,verb+advmod
+kirjutama seisukoht,1,verb+advmod
+astuma küll,1,verb+advmod
+saavutama nii-öelda,1,verb+advmod
+kaotama nii-öelda,1,verb+advmod
+eksima nüüd,1,verb+advmod
+eksima selgelt,1,verb+advmod
+nimetama siis,1,verb+advmod
+lööma siis,1,verb+advmod
+maksma kas,1,verb+advmod
+öelnud eks,1,verb+advmod
+keelama ega,1,verb+advmod
+tooma ka,1,verb+advmod
+tooma aktiivselt,1,verb+advmod
+tooma nüüd,2,verb+advmod
+tooma siis,2,verb+advmod
+pildistama siis,1,verb+advmod
+rääkima millegipärast,1,verb+advmod
+alustama tere,1,verb+advmod
+alustama siin,1,verb+advmod
+toonud siia,1,verb+advmod
+tulema iseenesest,1,verb+advmod
+tulema vahepeal,1,verb+advmod
+võrdlema vähemalt,1,verb+advmod
+tsiteerima uuesti,1,verb+advmod
+lootma nüüd,1,verb+advmod
+rääkima natukene,1,verb+advmod
+laskma nüüd,1,verb+advmod
+julgema küll,2,verb+advmod
+küsima tegelikult,1,verb+advmod
+pakkunud nii,1,verb+advmod
+pakkunud siis,1,verb+advmod
+pooldama siis,1,verb+advmod
+elanud muidugi,1,verb+advmod
+elanud hästi,1,verb+advmod
+hoidma muidugi,1,verb+advmod
+tabama siis,1,verb+advmod
+minema niimoodi,1,verb+advmod
+minema pikalt,1,verb+advmod
+kuulma juba,1,verb+advmod
+ilmuma rohkem,1,verb+advmod
+viitama nii-öelda,1,verb+advmod
+viitama pehmelt,1,verb+advmod
+sündima loomulikult,1,verb+advmod
+olema kangesti,1,verb+advmod
+helistama seal,1,verb+advmod
+helistama ikkagi,1,verb+advmod
+pandud sellepärast,2,verb+advmod
+pandud ju,2,verb+advmod
+pandud konkreetselt,2,verb+advmod
+raputama hirmsasti,1,verb+advmod
+tegema võib-olla,1,verb+advmod
+tegema natukene,1,verb+advmod
+võtma kas,1,verb+advmod
+minema nüüd,2,verb+advmod
+tunduma nüüd,2,verb+advmod
+tunduma küll,1,verb+advmod
+meenutama pigem,2,verb+advmod
+käima ju,1,verb+advmod
+vastama üleolevalt,1,verb+advmod
+kalduma siis,1,verb+advmod
+kalduma nii-öelda,1,verb+advmod
+kalduma vasakule,1,verb+advmod
+teinud muidugi,1,verb+advmod
+teinud tegelikult,1,verb+advmod
+panema kas,1,verb+advmod
+tegema enne,1,verb+advmod
+tegema nii-öelda,1,verb+advmod
+astuma korduvalt,1,verb+advmod
+sattuma siis,1,verb+advmod
+sattuma tõepoolest,1,verb+advmod
+muutma tõepoolest,1,verb+advmod
+muutma ega,2,verb+advmod
+muutma kuidagi,1,verb+advmod
+sõlmima siis,1,verb+advmod
+käima tõepoolest,1,verb+advmod
+saatma siis,1,verb+advmod
+olema küll,1,verb+advmod
+viskama sinna,1,verb+advmod
+teatama nüüd,1,verb+advmod
+teatama siis,2,verb+advmod
+teatama niikaua,1,verb+advmod
+paistma samas,1,verb+advmod
+nokkima seal,2,verb+advmod
+nokkima siseselt,2,verb+advmod
+nokkima nüüd,2,verb+advmod
+andma sellepärast,1,verb+advmod
+andma ikka,1,verb+advmod
+teinud sisuliselt,1,verb+advmod
+haarama ka,1,verb+advmod
+vastanduma siis,1,verb+advmod
+vastanduma nii-öelda,1,verb+advmod
+vastanduma võimsalt,1,verb+advmod
+vastanduma praegu,1,verb+advmod
+olema väga,1,verb+advmod
+saabuma siin,1,verb+advmod
+juhtima vaikselt,1,verb+advmod
+juhtima praegu,1,verb+advmod
+saama muudmoodi,1,verb+advmod
+hakkama siin,2,verb+advmod
+proovima siis,1,verb+advmod
+olema jah,1,verb+advmod
+ehitama selliselt,1,verb+advmod
+ütlema äsja,1,verb+advmod
+ütlema juba,1,verb+advmod
+võtma mispärast,1,verb+advmod
+üritama nii,1,verb+advmod
+üritama siis,1,verb+advmod
+istuma rahulikult,1,verb+advmod
+panema nüüd,2,verb+advmod
+puhuma ometi,1,verb+advmod
+kuuluma suhteliselt,2,verb+advmod
+ütlema vist,1,verb+advmod
+tooma juba,1,verb+advmod
+teadma hästi,1,verb+advmod
+tulema siiamaani,1,verb+advmod
+olema ju,1,verb+advmod
+ütlema korraga,1,verb+advmod
+raiuma mitte,1,verb+advmod
+innustama võib-olla,1,verb+advmod
+vaatama siin,1,verb+advmod
+olema siinkohal,1,verb+advmod
+teatama muidugi,1,verb+advmod
+teatama näide,1,verb+advmod
+lisatud juba,1,verb+advmod
+toimuma ka,1,verb+advmod
+ühinema nüüd,2,verb+advmod
+ühinema kohe-kohe,2,verb+advmod
+huvitama kas,1,verb+advmod
+huvitama nüüd,1,verb+advmod
+huvitama hoopis,1,verb+advmod
+vaatama nii,1,verb+advmod
+vaatama nüüd,1,verb+advmod
+meenuma praegu,1,verb+advmod
+avaldama siin,1,verb+advmod
+nägema seal,1,verb+advmod
+nägema nüüd,1,verb+advmod
+nägema enam,1,verb+advmod
+nägema eks,1,verb+advmod
+ühinema nimelt,1,verb+advmod
+ühinema siis,1,verb+advmod
+võtma ka,3,verb+advmod
+kuulma kindlasti,1,verb+advmod
+kuulma kuskil,1,verb+advmod
+pöörama siis,1,verb+advmod
+juhtima niikaua,1,verb+advmod
+ütlema nüüd,1,verb+advmod
+jagama siis,1,verb+advmod
+lugema siis,1,verb+advmod
+tulema plaks,1,verb+advmod
+tulema enam,1,verb+advmod
+tulema koos,1,verb+advmod
+looma selgelt,1,verb+advmod
+sattunud nüüd,1,verb+advmod
+sattunud küll,1,verb+advmod
+arutlema üldse,1,verb+advmod
+niimatama ehk,1,verb+advmod
+niimatama siis,1,verb+advmod
+viinud siis,1,verb+advmod
+otsima siis,1,verb+advmod
+saama kohe,1,verb+advmod
+nuputama siis,1,verb+advmod
+nuputama palju,1,verb+advmod
+nuputama nii,1,verb+advmod
+lõpetama ikka,1,verb+advmod
+lõpetama juba,1,verb+advmod
+jätkama ikka,2,verb+advmod
+jätkama veel,2,verb+advmod
+hiilima siis,1,verb+advmod
+panema natukene,1,verb+advmod
+püüdma nii,1,verb+advmod
+püüdma kunagi,1,verb+advmod
+tõusma sinnasamasse,1,verb+advmod
+sõnastama absoluutselt,1,verb+advmod
+muutma siis,1,verb+advmod
+tegema noh,1,verb+advmod
+tulema ikkagi,1,verb+advmod
+näitama selgelt,2,verb+advmod
+tundma suurepäraselt,1,verb+advmod
+saama sajaprotsendiliselt,1,verb+advmod
+saama siin,1,verb+advmod
+heitma tõesti,1,verb+advmod
+heitma avalikult,1,verb+advmod
+viskama kõhuli,1,verb+advmod
+tulema taas,1,verb+advmod
+jälgima ka,1,verb+advmod
+tundma isiklikult,1,verb+advmod
+tundma juba,1,verb+advmod
+asuma siis,1,verb+advmod
+mainima juba,1,verb+advmod
+lubama nüüd,1,verb+advmod
+mõtlema kas,1,verb+advmod
+mõtlema nii,1,verb+advmod
+hoidma tingimata,1,verb+advmod
+jõudma kindlalt,1,verb+advmod
+jõudma siin,1,verb+advmod
+liikuma jah,1,verb+advmod
+teadma tõenäoliselt,2,verb+advmod
+teadma niimoodi,2,verb+advmod
+teadma tõesti,1,verb+advmod
+olema kõvasti,1,verb+advmod
+viima nii,1,verb+advmod
+viima nii-öelda,1,verb+advmod
+tõmbama ükskõik,1,verb+advmod
+prognoosinud kindlasti,1,verb+advmod
+prognoosinud siis,1,verb+advmod
+prognoosinud põhjalikult,1,verb+advmod
+jälginud siis,2,verb+advmod
+taotlema korduvalt,1,verb+advmod
+taotlema siis,1,verb+advmod
+müüma hulgi,1,verb+advmod
+jääma ka,1,verb+advmod
+minema hästi,1,verb+advmod
+valmima siis,2,verb+advmod
+valmima eks,2,verb+advmod
+valmima kunagi,2,verb+advmod
+läinud praegu,1,verb+advmod
+kinnitama nüüd,1,verb+advmod
+vastama võib-olla,1,verb+advmod
+vastama närviliselt,1,verb+advmod
+keskenduma teatavasti,1,verb+advmod
+usaldama ju,1,verb+advmod
+arvama eks,1,verb+advmod
+arvama muidugi,1,verb+advmod
+käima küll,1,verb+advmod
+nihutama etteotsa,2,verb+advmod
+tekkima seal,1,verb+advmod
+tekkima nii-öelda,1,verb+advmod
+tekkima siis,1,verb+advmod
+suunama siis,1,verb+advmod
+suunama sinna,1,verb+advmod
+juhtima sinna,1,verb+advmod
+siduma enesekindlalt,1,verb+advmod
+siduma ise,1,verb+advmod
+siduma niimoodi,1,verb+advmod
+pääsema kas,1,verb+advmod
+pääsema sinna,1,verb+advmod

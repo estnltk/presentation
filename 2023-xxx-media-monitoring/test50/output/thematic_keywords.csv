@@ -1,1 +1,21 @@
-
+lemma,class
+callable,string
+"'vastanduma',",vaidlused ja erimeelsused
+"'võitlema',",vaidlused ja erimeelsused
+"'häbistama',",vaidlused ja erimeelsused
+"'vaidlema',",vaidlused ja erimeelsused
+"'nokkima',",vaidlused ja erimeelsused
+"'kandideerima',",valimised
+"'valima',",valimised
+"'võitma',",valimised
+"'lubama',",valimised
+"'hääletama',",valimised
+"'valetama',",valetamine
+"'varjama',",valetamine
+"'mustama',",valetamine
+"'kuritarvitama',",valetamine
+"'juhtima',",valitsemine
+"'otsustama',",valitsemine
+"'kaasama',",valitsemine
+"'mõjutama',",valitsemine
+"'esindama',",valitsemine
